@@ -3,13 +3,6 @@
 class Location extends CI_Controller
 {
 
-    public $bcControllerUrl = '/location';
-    public $bcControllerText = "<i class='fa fa-building'></i> Locations";
-
-    public $bcViewText;
-
-
-
     /**
      * TODO: short description.
      *-
@@ -17,11 +10,10 @@ class Location extends CI_Controller
      */
     function workHome()
     {
-
-
-	$this->load->view('template/workHeader');
-	$this->load->view('work/home');
-	$this->load->view('template/workFooter');
+                                               
+      $this->load->view('template/workHeader');
+	    $this->load->view('work/home');
+	    $this->load->view('template/workFooter');
 
     }
 }
